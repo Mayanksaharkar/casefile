@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+playwright
+axe-playwright-python
+pyyaml
+python-dotenv
+uuid
+pydantic
+aiofiles
+Pillow
+aiohttp
+python-multipart
+sqlalchemy
+cryptography>=42.0.0
+sse-starlette

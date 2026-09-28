@@ -1,0 +1,13 @@
+{
+  "name": "casefile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Casefile - adaptive web app auditor (Next.js frontend + Express/Playwright/Gemini backend)",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,magenta \"cd backend && ./venv/bin/uvicorn src.main:app --port 4001 --reload\" \"npm run dev --prefix frontend\"",
+    "install:all": "cd backend && python3 -m venv venv && ./venv/bin/pip install -r requirements.txt && ./venv/bin/playwright install chromium && cd .. && npm install --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
